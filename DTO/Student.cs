@@ -12,7 +12,7 @@ namespace DTO
    public class Student
     {
         [DataMember]
-        public int ID { get; set; }
+        public Guid ID { get; set; }
 
         [DataMember]
         [Required]
