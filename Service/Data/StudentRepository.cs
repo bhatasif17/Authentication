@@ -15,7 +15,7 @@ namespace Service.Data
             AppDbContext db = new AppDbContext();
 
             //Better to use Stored Procedures
-            string query = "INSERT INTO dbo.Students (ID, Name, Address, Email, AddedBy) " +
+            string query = "INSERT INTO dbo.Student (ID, Name, Address, Email, AddedBy) " +
                   "VALUES (@ID, @Name, @Address, @Email, @AddedBy) ";
 
             // create connection and command
@@ -65,7 +65,7 @@ namespace Service.Data
             AppDbContext db = new AppDbContext();
          
             //Better to use Stored Procedures
-            string query = "SELECT Name, Address, Email FROM Students WHERE AddedBy = @UserID";
+            string query = "SELECT Name, Address, Email FROM Student WHERE AddedBy = @UserID";
 
             // create connection and command
             var connectionString = db.Database.Connection.ConnectionString;
