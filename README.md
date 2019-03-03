@@ -1,5 +1,7 @@
 # Authentication
 
+Create table.
+
 CREATE TABLE [dbo].[Students] (
     [ID]      UNIQUEIDENTIFIER NOT NULL,
     [Name]    VARCHAR (50)     NULL,
